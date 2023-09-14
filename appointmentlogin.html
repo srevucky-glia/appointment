@@ -21,5 +21,12 @@
           var inputEmail = document.getElementById("email");
           localStorage.setItem("apptemail", inputEmail.value);
       }
-</script></body>
+</script>
+<script>
+  function deleteElements() {
+  localStorage.clear();
+}
+</script>
+<div><input type="reset" onclick="deleteElement() /></div>
+</body>
 </html>
