@@ -1,10 +1,12 @@
+<html>
+<head><script async src="https://api.glia.com/salemove_integration.js"></script></head>
 <h1><span>Cortex Financial Appointment Page</span></h1>
 <p>This is the page where the appointment will happen. The Glia script is to be deployed to this page.</p>
-<script>
+<body><script>
 	var FormName = localStorage.getItem("apptname");
 	var FormEmail = localStorage.getItem("apptemail");
-	console.log("Name: " + FormName); 
-	console.log("Email: " + FormEmail); 
+	console.log("Name:" + FormName); 
+	console.log("Email:" + FormEmail); 
 </script>
   <script>
   sm.getApi({version: ‘v1’}).then(function(salemove){
@@ -19,3 +21,5 @@
             });
         });
   </script>
+</body>
+<html>
