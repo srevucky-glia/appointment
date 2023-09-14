@@ -3,15 +3,14 @@
 <script>
 	var FormName = localStorage.getItem("apptname");
 	var FormEmail = localStorage.getItem("apptemail");
-	console.log(FormName); 
-	console.log(FormEmail); 
+	console.log("Name:" + FormName); 
+	console.log("Email" + FormEmail); 
 </script>
   <script>
   sm.getApi({version: ‘v1’}).then(function(salemove){
         salemove.updateInformation({
-            externalId: ‘123456789’,
             name:  apptname,
-            email: apptemail”,
+            email: apptemail,
             customAttributes: {
                 Authenticated:‘YES’
                 }
