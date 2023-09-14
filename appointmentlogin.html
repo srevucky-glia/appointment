@@ -1,0 +1,25 @@
+<html>
+<h1><span>Cortex Financial Appointment Login</span></h1>
+<body>
+<p><b>Check-in:</b> Please use the form below to check in for your appointment:</p>
+</div>
+<!-- Form building info found here: https://www.shiksha.com/online-courses/articles/html-forms-tutorial-with-examples/ -->
+<div>
+  <form>
+<p>Enter your name</p>
+<input type="text" id="name" /><br /><br />
+<p>Enter your email address</p>
+<input type="text" id="email" /></form></div>
+<div></div>
+<div><input type="submit" onclick="nextPage()" /></div>
+<p>
+<script>
+      function nextPage() {
+        window.location.href="/appointment.html";
+         var inputName= document.getElementById("name");
+         localStorage.setItem("apptname", inputName.value);
+         var inputEmail= document.getElementById("email");
+         localStorage.setItem("apptemail", inputEmail.value);    
+      }
+</script><body>
+</html>
