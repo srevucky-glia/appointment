@@ -5,7 +5,7 @@
 </div>
 <!-- Form building info found here: https://www.shiksha.com/online-courses/articles/html-forms-tutorial-with-examples/ -->
 <div>
-  <form>
+  <form id="form_id">
 <p>Enter your name</p>
 <input type="text" id="name" /><br /><br />
 <p>Enter your email address</p>
@@ -26,6 +26,8 @@
 <script>
   function deleteElements() {
   localStorage.clear();
+  var element = document.getElementById("form_id");
+         element.reset()
 }
 </script>
 </body>
