@@ -1,6 +1,6 @@
 <html>
 <head>
-	<script src="https://api.glia.com/salemove_integration.js"></script>
+	<script async src="https://api.glia.com/salemove_integration.js"></script>
 	<title>Cortex Financial Appointments</title>
 </head>
 <h1><span>Cortex Financial Appointment Page</span></h1>
@@ -17,8 +17,9 @@
         glia.updateInformation({
             name:  FormName,
             email: FormEmail,
+            phone: FormPhone,
             customAttributes: {
-                ScheduledAppointment:'YES'
+                Scheduled Appointment:'YES'
                 }
             }).then(function(){
             }).catch(function(error){
