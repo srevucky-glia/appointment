@@ -8,6 +8,8 @@
   <form id="form_id">
 <p>Enter your name:</p>
 <input type="text" id="name" required /><br /><br />
+<p>Enter your phone number:</p>
+<input type="text" id="phone" required /><br /><br />
 <p>Enter your email address:</p>
 <input type="text" id="email" required /></form></div>
 <div></div>
@@ -21,6 +23,8 @@
           localStorage.setItem("apptname", inputName.value);
           var inputEmail = document.getElementById("email");
           localStorage.setItem("apptemail", inputEmail.value);
+          var inputPhone = document.getElementById("phone");
+          localStorage.setItem("apptemail", inputPhone.value);
       }
 </script>
 <script>
