@@ -9,10 +9,10 @@
 	<script>
 	var FormName = localStorage.getItem("apptname");
 	var FormEmail = localStorage.getItem("apptemail");
-        var FormPhone = localStorage.getItem("apptphone");
+  var FormPhone = localStorage.getItem("apptphone");
 	console.log("Name:" + FormName); 
 	console.log("Email:" + FormEmail);
-        console.log("Phone:" + FormPhone); 
+  console.log("Phone:" + FormPhone); 
 </script>
   <script>
   sm.getApi({version: 'v1'}).then(function(glia){
@@ -21,7 +21,7 @@
             email: FormEmail,
             phone: FormPhone,
             customAttributes: {
-                Scheduled Appointment:'YES'
+                ScheduledAppointment:'YES'
                 }
             }).then(function(){
             }).catch(function(error){
